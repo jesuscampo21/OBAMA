@@ -1,0 +1,151 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f9ff;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo-container {
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.header-text {
+  text-align: center;
+  flex: 1;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Contenido principal */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.contenido {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contenido p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Formulario */
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #002b5c;
+}
+
+/* Redes sociales */
+.social {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #004080;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: #ff6600;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #004080;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+}
